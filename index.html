@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sivaranjani Soundarajan – MIS &amp; Data Analytics Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--sand:#E6EEFA;--clay:#0356C5;--moss:#0356C5;--bark:#02060E;--glow:#6FAEFF;--bg:#EAF1FB;--ink:#02060E;--card:#D9E6F8;--muted:#0356C5;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#02060E;--ink:#E6EEFA;--card:#0A1A33;--muted:#6FAEFF}}
+:root[data-theme="dark"]{--bg:#02060E;--ink:#E6EEFA;--card:#0A1A33;--muted:#6FAEFF}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Work Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.1;margin:0}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+.hero{background:linear-gradient(160deg,#02060E 35%,#0356C5 150%);color:var(--sand);padding:72px 0 64px;border-bottom:8px solid var(--clay)}
+.hero h1{font-size:clamp(40px,8vw,84px);font-weight:800;letter-spacing:-.02em}
+.hero p.role{font-size:clamp(18px,2.6vw,24px);margin:18px 0 0;max-width:640px}
+.hero p.role b{color:var(--glow);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--clay);background:var(--clay);color:#fff}
+.btn.alt{background:none;color:var(--sand)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;margin-top:48px;border-top:1px solid rgba(111,174,255,.4)}
+.stats div{padding:18px 16px 0 0}.stats strong{font:800 34px Fraunces,serif;color:var(--glow);display:block}
+.stats span{font-size:14px;opacity:.85}
+section{padding:64px 0}
+h2{font-size:clamp(28px,4.5vw,44px);margin-bottom:10px}
+.lead{max-width:640px;margin:0 0 30px;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tab{font:600 15px "Work Sans",sans-serif;padding:10px 18px;border-radius:999px;border:2px solid var(--moss);background:none;color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--moss);color:#fff}
+.tab:focus-visible,.btn:focus-visible{outline:3px solid var(--clay);outline-offset:2px}
+.panel{display:none;background:var(--card);border-radius:18px;padding:24px}
+.panel.on{display:block}
+.panel>p{margin:0 0 20px;max-width:700px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px}
+.kpi{background:var(--bg);border-left:5px solid var(--clay);padding:12px 14px;border-radius:6px}
+.kpi small{display:block;opacity:.8}.kpi b{font:800 26px Fraunces,serif}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.chart{background:var(--bg);border-radius:12px;padding:14px}
+.chart h3{font-size:18px;margin-bottom:8px}
+svg{width:100%;height:auto;display:block}svg text{fill:var(--ink);font:12px "Work Sans",sans-serif}
+.note{font-size:13px;opacity:.8;margin-top:14px}
+.chips{display:flex;gap:8px;margin:0 0 10px}.chip{font:500 13px "Work Sans",sans-serif;border:1.5px solid var(--moss);background:none;color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--clay);border-color:var(--clay);color:#fff}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.skill{border-top:4px solid var(--clay);padding-top:12px}.skill h3{font-size:20px;margin-bottom:6px}
+.skill p{margin:0;font-size:15px}
+.dark{background:linear-gradient(180deg,#02060E,#03234f);color:var(--sand)}.dark .lead{color:var(--glow)}
+.job{border-left:3px solid var(--clay);padding:0 0 28px 22px;margin-left:6px;position:relative}
+.job::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--sand);border:3px solid var(--clay)}
+.job h3{font-size:22px}.job em{color:var(--glow);font-size:14px;font-style:normal}
+.job ul{margin:10px 0 0;padding-left:18px}.job li{margin-bottom:6px;max-width:720px}
+.award{display:inline-block;background:var(--clay);color:#fff;padding:6px 14px;border-radius:6px;font-weight:600;margin-top:6px}
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:6px}
+footer{padding:56px 0 40px;text-align:left}
+footer a.big{font:800 clamp(22px,4vw,38px) Fraunces,serif;text-decoration:none;border-bottom:4px solid var(--clay);word-break:break-all}
+footer p{margin:18px 0 0}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.pbi{background:#02060E;border:1px solid #1E3F73;border-radius:14px;overflow:hidden;color:#E6EEFA;box-shadow:0 20px 50px rgba(2,6,14,.35)}
+.pb-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 18px;background:linear-gradient(90deg,#02060E,#0356C5);font-size:13px}
+.pb-top b{font:600 18px Fraunces,serif}
+.pb-body{display:grid;grid-template-columns:170px 1fr}
+#sl{padding:14px;background:#050f20;border-right:1px solid #12294d}
+#sl h4{margin:12px 0 6px;font:600 13px "Work Sans",sans-serif;color:#6FAEFF}
+.sc{display:block;width:100%;text-align:left;margin:0 0 4px;padding:6px 10px;border-radius:6px;border:1px solid #1E3F73;background:none;color:#CFE0F7;font:500 13px "Work Sans",sans-serif;cursor:pointer}
+.sc[aria-pressed="true"]{background:#0356C5;border-color:#3D8BFF;color:#fff}
+.sc:focus-visible,.pg:focus-visible{outline:3px solid #6FAEFF;outline-offset:2px}
+#cv{padding:14px;min-width:0}
+.kr{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-bottom:12px}
+.kp{background:#0A1A33;border:1px solid #12294d;border-top:3px solid #0356C5;border-radius:8px;padding:10px 12px}
+.kp small{display:block;color:#9DB8DD;font-size:12px}.kp b{font:800 26px Fraunces,serif}.kp i{font-style:normal;font-size:12px;display:block}
+.kp i.g{color:#6FD39B}.kp i.b{color:#FF7A59}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.vz{background:#0A1A33;border:1px solid #12294d;border-radius:8px;padding:10px 12px;min-width:0;overflow-x:auto}
+.vz h3{font:600 14px "Work Sans",sans-serif;margin:0 0 6px;color:#CFE0F7}
+.s2{grid-column:span 2}.s3{grid-column:span 3}
+.pbi svg text{fill:#CFE0F7;font-size:11px}
+.pb-pages{display:flex;flex-wrap:wrap;gap:4px;background:#050f20;border-top:1px solid #12294d;padding:8px 10px}
+.pg{font:600 13px "Work Sans",sans-serif;padding:7px 14px;border:0;border-radius:6px 6px 0 0;background:none;color:#9DB8DD;cursor:pointer;border-bottom:3px solid transparent}
+.pg[aria-selected="true"]{color:#fff;border-bottom-color:#3D8BFF;background:#0A1A33}
+.ht{border-collapse:collapse;width:100%;font-size:11px;text-align:center}.ht th{font-weight:500;color:#9DB8DD;padding:4px 6px;text-align:left;white-space:nowrap}.ht td{padding:6px 4px;color:#fff;border:2px solid #0A1A33}
+.tb{width:100%;border-collapse:collapse;font-size:13px}.tb th{text-align:left;color:#9DB8DD;font-weight:500;padding:6px;border-bottom:1px solid #1E3F73}.tb td{padding:7px 6px;border-bottom:1px solid #12294d}
+.db{display:inline-block;height:8px;background:#3D8BFF;border-radius:2px;margin-right:6px;vertical-align:middle}
+.up{color:#FF7A59}.dn{color:#6FD39B}
+@media(max-width:760px){.pb-body{grid-template-columns:1fr}#sl{display:flex;flex-wrap:wrap;gap:6px;border-right:0}#sl h4{width:100%;margin:4px 0}.sc{width:auto}.vg{grid-template-columns:1fr}.s2,.s3{grid-column:auto}}
+
+/* Portfolio enhancement layer */
+:root{--accent:#3D8BFF;--line:rgba(111,174,255,.22)}
+.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--glow);font-weight:700;margin:0 0 12px}
+.hero .intro{max-width:760px;font-size:17px;color:#d5e5fb;margin:18px 0 0}
+.section-tag{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);font-weight:700;margin-bottom:10px}
+.about-grid,.impact-grid,.project-grid,.tool-grid,.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.about-card,.impact-card,.project-card,.tool-card,.edu-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.about-card h3,.project-card h3,.tool-card h3,.edu-card h3{font-size:19px;margin:0 0 8px}
+.about-card p,.project-card p,.tool-card p,.edu-card p{margin:0;color:var(--muted);font-size:14px}
+.impact-card{background:linear-gradient(145deg,#071a35,#0b2b57);color:#e6eeff;border:1px solid #1e477a}
+.impact-card strong{display:block;font:800 34px Fraunces,serif;color:#6FAEFF}
+.impact-card span{font-size:13px;color:#d0e1fa}
+.project-card{display:flex;flex-direction:column;gap:10px}
+.project-card .project-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);font-weight:700}
+.project-card .tools{font-size:12px;font-weight:600;color:var(--muted)}
+.tool-card{display:flex;align-items:center;gap:13px;min-height:88px}
+.tool-card img{width:38px;height:38px;object-fit:contain}
+.tool-card .tool-fallback{width:38px;height:38px;border-radius:10px;background:#0a1a33;color:#8fc0ff;display:grid;place-items:center;font-weight:800}
+.experience-intro{max-width:720px}
+.job .job-summary{font-size:15px;color:var(--muted);margin:8px 0}
+.job .contribution{background:var(--card);padding:12px 15px;border-radius:10px;margin-top:12px;font-size:14px}
+.contact-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.contact-links a{display:inline-block;border:1px solid #6FAEFF;border-radius:999px;padding:10px 16px;text-decoration:none;font-weight:600}
+footer .contact-small{font-size:14px;color:#c8dcf6;word-break:break-word}
+@media(max-width:600px){.hero{padding:54px 0 44px}.hero .intro{font-size:15px}.about-card,.impact-card,.project-card,.tool-card{padding:16px}}
+
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<p class="kicker">Data Analyst · MIS &amp; Reporting Specialist · Power BI Developer</p>
+<h1>Sivaranjani<br>Soundarajan</h1>
+<p class="role">Turning complex data into <b>clear decisions, smarter reporting, and measurable impact.</b></p>
+<p class="intro">I bring 4+ years of MIS and reporting experience, building interactive dashboards, automating recurring reports, and translating operational data into insights that teams can act on.</p>
+<div class="cta"><a class="btn" href="#work">Explore my dashboards</a><a class="btn alt" href="mailto:amshivasoundharajan@gmail.com">Contact me</a><a class="btn alt" href="#experience">View experience</a></div>
+<div class="stats">
+<div><strong>4+ yrs</strong><span>MIS reporting &amp; analytics</span></div>
+<div><strong>20+</strong><span>Power BI &amp; Excel dashboards</span></div>
+<div><strong>~90%</strong><span>less manual reporting effort</span></div>
+<div><strong>Q4 2024</strong><span>Best Performer Award</span></div>
+</div></div></header>
+
+<section id="about"><div class="wrap">
+<p class="section-tag">01 / Profile</p>
+<h2>Who I am</h2>
+<p class="lead">I don't just report numbers. I uncover the story behind them.</p>
+<div class="about-grid">
+<div class="about-card"><h3>Analytics with purpose</h3><p>Data Analyst and MIS professional with 4+ years of experience transforming operational datasets into reliable reporting and business insights.</p></div>
+<div class="about-card"><h3>Dashboards that answer questions</h3><p>Builds clear, interactive Power BI and Excel dashboards to track KPIs, reveal performance gaps, and support informed decisions.</p></div>
+<div class="about-card"><h3>Automation mindset</h3><p>Uses Advanced Excel, Power Query, Power BI, and SQL to reduce repetitive work and improve the consistency of reporting.</p></div>
+</div>
+</div></section>
+<section id="impact"><div class="wrap">
+<p class="section-tag">02 / Measurable contribution</p>
+<h2>Impact at a glance</h2>
+<p class="lead">A track record of making reporting faster, clearer, and more useful.</p>
+<div class="impact-grid">
+<div class="impact-card"><strong>20+</strong><span>Interactive Power BI and Advanced Excel dashboards and analytical reports</span></div>
+<div class="impact-card"><strong>~90%</strong><span>Reduction in recurring manual reporting effort through automation</span></div>
+<div class="impact-card"><strong>Q4 2024</strong><span>Best Performer Award for contribution and performance</span></div>
+</div>
+<p class="note">Performance figures reflect the achievements stated in this portfolio. Dashboard demonstrations below use illustrative sample data, not client or employer records.</p>
+</div></section>
+<section id="work"><div class="wrap">
+<p class="section-tag">03 / Selected work</p>
+<h2>Power BI dashboards &amp; analytics</h2>
+<p class="lead">I design dashboards to move teams from monitoring performance to understanding what needs attention and why.</p>
+<div class="project-grid" style="margin-bottom:24px">
+<div class="project-card"><span class="project-label">Healthcare analytics</span><h3>Denial &amp; quality insights</h3><p>Explore denial patterns, payer-level trends, recurring error categories, and preventive controls through a healthcare operations dashboard.</p><span class="tools">Power BI · KPI analysis · Pareto</span></div>
+<div class="project-card"><span class="project-label">Quality performance</span><h3>Automotive quality MIS</h3><p>Track DPM, PPM, rework cost, customer trends, and monthly quality performance using KPI cards, trend views, and heatmaps.</p><span class="tools">Power BI · Data visualization · Excel</span></div>
+<div class="project-card"><span class="project-label">Business operations</span><h3>Sales &amp; operations</h3><p>Compare actuals against targets, review regional performance, and identify growth patterns with interactive reporting.</p><span class="tools">Power BI · Target tracking · Analysis</span></div>
+</div>
+<p class="note">The interactive showcase below is a portfolio demonstration built with illustrative sample data. It is not a live connection to company systems or a published Power BI report.</p>
+<div class="pbi"><div class="pb-top"><b id="pt"></b><span>Interactive sample · illustrative data</span></div>
+<div class="pb-body"><aside id="sl" aria-label="Slicers"></aside><main id="cv"></main></div>
+<div class="pb-pages" role="tablist"><button class="pg" role="tab" data-p="auto">Automotive quality MIS</button><button class="pg" role="tab" data-p="health">Healthcare analytics</button><button class="pg" role="tab" data-p="basic">Sales &amp; ops basics</button></div></div>
+</div></section>
+
+<section class="dark" id="skills"><div class="wrap">
+<p class="section-tag">04 / Technical toolkit</p>
+<h2>Skills &amp; technologies</h2><p class="lead">The tools, methods, and analytical strengths I bring to every reporting challenge.</p>
+<div class="tool-grid">
+<div class="tool-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="SQL logo" onerror="this.style.display='none'"><div><h3>SQL</h3><p>Joins, CTEs, subqueries, CASE, aggregations, KPI and incentive queries</p></div></div>
+<div class="tool-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" onerror="this.style.display='none'"><div><h3>Python</h3><p>Data analysis foundations and libraries including Pandas, NumPy, and Matplotlib</p></div></div>
+<div class="tool-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" alt="Power BI logo" onerror="this.style.display='none'"><div><h3>Power BI</h3><p>Interactive dashboards, KPI design, data modeling, and data storytelling</p></div></div>
+<div class="tool-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftoffice/microsoftoffice-original.svg" alt="Microsoft Office logo" onerror="this.style.display='none'"><div><h3>Advanced Excel</h3><p>Pivot Tables, XLOOKUP, INDEX-MATCH, SUMIFS, charts, Power Query, and reporting automation</p></div></div>
+<div class="tool-card"><span class="tool-fallback">T</span><div><h3>Tableau</h3><p>Data visualization, dashboard concepts, and analytical reporting</p></div></div>
+<div class="tool-card"><span class="tool-fallback">PQ</span><div><h3>Power Query</h3><p>Data cleaning, transformation, consolidation, and repeatable workflows</p></div></div>
+</div>
+<div class="skills" style="margin-top:22px">
+<div class="skill"><h3>Data &amp; business analysis</h3><p>Trend analysis, root-cause analysis, KPI tracking, performance analysis, and business insights</p></div>
+<div class="skill"><h3>Data quality</h3><p>Data cleaning, validation, reconciliation, accuracy checks, and structured reporting</p></div>
+<div class="skill"><h3>Collaboration</h3><p>Requirements gathering, management presentations, cross-functional coordination, and team support</p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<p class="section-tag">05 / Professional journey</p>
+<h2>Experience</h2><p class="lead experience-intro">From operational quality reporting to healthcare analytics, my journey has been about making data more dependable, accessible, and actionable.</p>
+<div class="job"><h3>MIS Executive · Coronis Ajuba Solutions</h3><em>October 2023 – October 2026 · Chennai</em>
+<p class="job-summary">Healthcare operations reporting, quality analytics, and automation.</p>
+<ul><li>Built and automated 20+ Power BI and Excel dashboards for operational and management reporting.</li>
+<li>Cut recurring manual reporting effort by about 90% with Power Query, advanced formulas and workflow automation.</li>
+<li>Ran trend and root-cause analysis on healthcare data to find denial trends, recurring errors and risk areas.</li>
+<li>Turned complex datasets into self-service summaries and worked with overseas teams to define KPIs.</li></ul>
+<span class="award">Best Performer Award · Q4 2024</span>
+<div class="contribution"><strong>Signature contribution:</strong> Connecting weekly data consolidation, monthly quality analysis, and actionable training recommendations — while reducing repetitive reporting effort through automation.</div></div>
+<div class="job"><h3>MIS Executive · Yazaki India Pvt. Ltd.</h3><em>November 2022 – October 2023 · Maraimalai Nagar</em>
+<p class="job-summary">Manufacturing quality MIS, customer performance reporting, and rework-cost visibility.</p>
+<ul><li>Reported DPM and PPM quality KPIs through daily, weekly and monthly MIS reports.</li>
+<li>Built monthly rework-cost reports that flagged quality issues and reduced operational losses.</li>
+<li>Presented performance data to HQ management for major global automotive accounts.</li></ul>
+<div class="contribution"><strong>Signature contribution:</strong> Making customer quality performance and rework costs easier to monitor through structured daily, weekly, and monthly MIS reporting.</div></div>
+</div></section>
+<section id="education"><div class="wrap">
+<p class="section-tag">06 / Education &amp; learning</p>
+<h2>Education</h2>
+<div class="edu">
+<div class="edu-card"><h3>Bachelor of Computer Applications (BCA)</h3><p>AVC College (Autonomous) · 2020</p></div>
+<div class="edu-card"><h3>Data Analytics Training</h3><p>Power BI, Advanced Excel, SQL, Python, and Tableau</p></div>
+</div></div></section>
+</div></section>
+
+<footer class="dark" id="contact"><div class="wrap" style="padding-top:8px">
+<p class="section-tag">07 / Get in touch</p>
+<h2>Let's turn data into your next advantage.</h2>
+<p class="lead">Open to opportunities across Data Analytics, MIS, Power BI, and Business Intelligence.</p>
+<div class="contact-grid">
+<div><p class="contact-small">EMAIL</p><a class="big" href="mailto:amshivasoundharajan@gmail.com">amshivasoundharajan@gmail.com</a></div>
+<div><p class="contact-small">PHONE</p><a class="big" href="tel:+916380413349">+91 6380413349</a></div>
+<div><p class="contact-small">LINKEDIN</p><a class="big" href="https://www.linkedin.com/in/sivaranjani-soundarajan-97a328244/" target="_blank" rel="noopener">View LinkedIn profile</a></div>
+</div>
+<div class="contact-links"><a href="mailto:amshivasoundharajan@gmail.com">Email me</a><a href="https://www.linkedin.com/in/sivaranjani-soundarajan-97a328244/" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+<p class="contact-small">Chennai, India · Data Analyst | MIS &amp; Reporting Specialist</p>
+</div></footer>
+
+<script>
+var $=function(i){return document.getElementById(i)},B=["#0356C5","#3D8BFF","#6FAEFF","#A9CCFF","#1E3F73","#7C93B8"],R="#FF7A59",gid=0;
+var M=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],sin=Math.sin;
+function sum(a){return a.reduce(function(x,y){return x+y},0)}
+function k(n){return Math.round(n).toLocaleString("en-IN")}
+function hm(h){return h=="H1"?[0,1,2,3,4,5]:h=="H2"?[6,7,8,9,10,11]:[0,1,2,3,4,5,6,7,8,9,10,11]}
+function area(d,tv,l){var W=520,H=210,p=34,mx=Math.max.apply(0,d.concat([tv]))*1.12,g="g"+(gid++),x=function(i){return p+i*(W-p-8)/Math.max(d.length-1,1)},y=function(v){return H-26-v/mx*(H-40)},
+pt=d.map(function(v,i){return x(i)+","+y(v)}).join(" "),s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Trend chart"><defs><linearGradient id="'+g+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3D8BFF" stop-opacity=".55"/><stop offset="1" stop-color="#3D8BFF" stop-opacity="0"/></linearGradient></defs>';
+[0,1,2,3].forEach(function(q){var v=mx*q/3;s+='<line x1="'+p+'" x2="'+(W-8)+'" y1="'+y(v)+'" y2="'+y(v)+'" stroke="#fff" opacity=".1"/><text x="0" y="'+(y(v)+4)+'">'+(v<30?v.toFixed(0):Math.round(v))+'</text>'});
+s+='<polygon points="'+x(0)+','+y(0)+' '+pt+' '+x(d.length-1)+','+y(0)+'" fill="url(#'+g+')"/><polyline fill="none" stroke="#6FAEFF" stroke-width="2.5" points="'+pt+'"/><line x1="'+p+'" x2="'+(W-8)+'" y1="'+y(tv)+'" y2="'+y(tv)+'" stroke="'+R+'" stroke-dasharray="5 4" stroke-width="2"/><text x="'+(W-60)+'" y="'+(y(tv)-5)+'" style="fill:'+R+'">target</text>';
+d.forEach(function(v,i){s+='<circle cx="'+x(i)+'" cy="'+y(v)+'" r="3.5" fill="#E6EEFA"><title>'+l[i]+': '+v+'</title></circle><text x="'+(x(i)-9)+'" y="'+(H-8)+'">'+l[i]+'</text>'});
+return s+'</svg>'}
+function hbar(d,l){var W=520,r=32,H=d.length*r+6,mx=Math.max.apply(0,d),s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Bar chart">';
+d.forEach(function(v,i){var w=v/mx*(W-210);s+='<text x="0" y="'+(i*r+21)+'">'+l[i]+'</text><rect x="110" y="'+(i*r+6)+'" width="'+w+'" height="20" rx="4" fill="'+B[i%2?1:0]+'"><title>'+l[i]+': '+v+'</title></rect><text x="'+(116+w)+'" y="'+(i*r+21)+'">'+v+'</text>'});
+return s+'</svg>'}
+function cols(a,t,l){var W=520,H=210,mx=Math.max.apply(0,a.concat(t))*1.12,n=a.length,bw=W/n,s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Actual vs target">';
+a.forEach(function(v,i){var h=v/mx*(H-40),th=t[i]/mx*(H-40),x=i*bw;s+='<rect x="'+(x+6)+'" y="'+(H-24-h)+'" width="'+(bw-12)+'" height="'+h+'" rx="3" fill="'+(v>=t[i]?"#3D8BFF":"#1E5FB8")+'"><title>'+l[i]+' actual '+v+' / target '+t[i]+'</title></rect><line x1="'+(x+2)+'" x2="'+(x+bw-2)+'" y1="'+(H-24-th)+'" y2="'+(H-24-th)+'" stroke="'+R+'" stroke-width="3"/><text x="'+(x+bw/2-9)+'" y="'+(H-8)+'">'+l[i]+'</text>'});
+return s+'</svg>'}
+function donut(d,l){var T=sum(d),c=2*Math.PI*48,o=0,s='<svg viewBox="0 0 320 150" role="img" aria-label="Donut chart">';
+d.forEach(function(v,i){var n=v/T*c,q=Math.round(v/T*100);s+='<circle cx="70" cy="75" r="48" fill="none" stroke="'+B[i%6]+'" stroke-width="22" stroke-dasharray="'+n+' '+(c-n)+'" stroke-dashoffset="'+(-o)+'" transform="rotate(-90 70 75)"><title>'+l[i]+': '+q+'%</title></circle><rect x="145" y="'+(14+i*22)+'" width="10" height="10" rx="2" fill="'+B[i%6]+'"/><text x="161" y="'+(23+i*22)+'">'+l[i]+' '+q+'%</text>';o+=n});
+return s+'</svg>'}
+function gauge(p,sub){p=Math.max(0,Math.min(100,p));var a=Math.PI*(1-p/100),x=130+100*Math.cos(a),y=130-100*Math.sin(a);
+return '<svg viewBox="0 0 260 160" role="img" aria-label="Gauge '+p+'%"><path d="M30 130A100 100 0 0 1 230 130" fill="none" stroke="#12294d" stroke-width="22" stroke-linecap="round"/><path d="M30 130A100 100 0 0 1 '+x+' '+y+'" fill="none" stroke="#3D8BFF" stroke-width="22" stroke-linecap="round"/><text x="130" y="122" text-anchor="middle" style="font:800 34px Fraunces,serif;fill:#E6EEFA">'+p+'%</text><text x="130" y="150" text-anchor="middle">'+sub+'</text></svg>'}
+function pareto(d,l){var W=520,H=210,p=4,T=sum(d),mx=Math.max.apply(0,d)*1.1,bw=(W-p)/d.length,c=0,pts=[],s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Pareto chart">';
+d.forEach(function(v,i){var h=v/mx*(H-60),x=p+i*bw;c+=v;pts.push((x+bw/2)+","+(H-34-c/T*(H-60)));s+='<rect x="'+(x+8)+'" y="'+(H-34-h)+'" width="'+(bw-16)+'" height="'+h+'" rx="3" fill="#0356C5"><title>'+l[i]+': '+k(v)+'</title></rect><text x="'+(x+bw/2)+'" y="'+(H-16)+'" text-anchor="middle">'+l[i]+'</text>'});
+return s+'<polyline fill="none" stroke="'+R+'" stroke-width="2.5" points="'+pts.join(" ")+'"/></svg>'}
+function heat(cs,ms,f){var lo=1e9,hi=0,rows=cs.map(function(c){return ms.map(function(m){var v=f(c,m);lo=Math.min(lo,v);hi=Math.max(hi,v);return v})}),
+h='<table class="ht"><tr><th></th>'+ms.map(function(m){return '<th>'+M[m]+'</th>'}).join("")+'</tr>';
+rows.forEach(function(r,i){h+='<tr><th>'+CU[cs[i]]+'</th>'+r.map(function(v){var t=(v-lo)/(hi-lo||1);return '<td style="background:rgb('+Math.round(3+252*t)+','+Math.round(86+36*t)+','+Math.round(197-108*t)+')">'+v+'</td>'}).join("")+'</tr>'});
+return h+'</table>'}
+function tb(h,r){return '<table class="tb"><tr>'+h.map(function(x){return '<th>'+x+'</th>'}).join("")+'</tr>'+r.map(function(x){return '<tr>'+x.map(function(c){return '<td>'+c+'</td>'}).join("")+'</tr>'}).join("")+'</table>'}
+function db(p,v){return '<span class="db" style="width:'+Math.round(p*.8)+'px"></span>'+v}
+var CU=["Ashok Leyland","Nissan","Ford","Daimler","Isuzu","OLA"],bs=[700,620,560,500,450,380],vo=[9,8,7,5,4,3];
+function dpm(c,m){return Math.round(bs[c]*(1-.045*m)*(1+.06*sin(m*1.7+c)))}
+var PA=["Payer A","Payer B","Payer C","Payer D"],CL=[4200,3600,2800,1900],RT=[15.5,13.4,12.2,10.6];
+var RS=[["Missing authorization","Auth",28,"Auth check before submission"],["Coding error","Coding",22,"Coder QA checklist"],["Eligibility","Eligib.",18,"Verify eligibility at intake"],["Duplicate claim","Duplicate",14,"Duplicate-claim flag"],["Timely filing","Filing",10,"Filing-deadline alerts"],["Other","Other",8,"Weekly review"]];
+function rate(p,m){return RT[p]*(1-.03*m)*(1+.05*sin(m*1.3+p))}
+function ww(r,p){return RS[r][2]*(1+.25*sin(p*2+r))}
+var RG=["North","South","East","West"],ab=[26,30,22,28];
+function act(r,m){return Math.round(ab[r]*(1+.03*m)*(1+.07*sin(m*1.1+r*2)))}
+function tg(r,m){return Math.round(ab[r]*(1+.025*m))}
+var D={};
+D.auto=function(f){var cs=f.Customer=="All"?[0,1,2,3,4,5]:[CU.indexOf(f.Customer)],ms=hm(f.Half),
+w=function(m){return Math.round(sum(cs.map(function(c){return dpm(c,m)*vo[c]}))/sum(cs.map(function(c){return vo[c]})))},
+s=ms.map(w),last=s[s.length-1],chg=Math.round((last/s[0]-1)*100),
+rw=cs.map(function(c){return +sum(ms.map(function(m){return dpm(c,m)*vo[c]*.002})).toFixed(1)}),
+df=sum(cs.map(function(c){return sum(ms.map(function(m){return dpm(c,m)*vo[c]}))}));
+return{t:"Quality MIS · DPM and PPM by customer",k:[{l:"DPM (latest month)",v:last,d:(chg<=0?"▼ ":"▲ ")+Math.abs(chg)+"% vs start",g:chg<=0},{l:"PPM (latest month)",v:Math.round(last*.42),d:"target ≤ 210",g:last*.42<=210},{l:"Rework cost (₹ lakh)",v:sum(rw).toFixed(1),d:"selected period"},{l:"Defects logged",v:k(df),d:"selected period"}],
+v:[{t:"DPM trend vs target",s:2,h:area(s,500,ms.map(function(m){return M[m]}))},{t:"Months within target",h:gauge(Math.round(s.filter(function(v){return v<=500}).length/s.length*100),"DPM at or below 500")},{t:"Rework cost by customer (₹ lakh)",h:hbar(rw,cs.map(function(c){return CU[c].split(" ")[0]}))},{t:"Defect type share",s:2,h:donut([31,24,18,15,12],["Crimping","Continuity","Connector","Labeling","Other"])},{t:"DPM heatmap · customer × month",s:3,h:heat(cs,ms,dpm)}]}};
+D.health=function(f){var ps=f.Payer=="All"?[0,1,2,3]:[PA.indexOf(f.Payer)],ms=hm(f.Half),
+wr=function(m){return +(sum(ps.map(function(p){return rate(p,m)*CL[p]}))/sum(ps.map(function(p){return CL[p]}))).toFixed(1)},
+s=ms.map(wr),last=s[s.length-1],chg=Math.round((last/s[0]-1)*100),
+dn=function(p){return sum(ms.map(function(m){return CL[p]*rate(p,m)/100}))},tot=sum(ps.map(dn)),
+ws=function(p){return sum(RS.map(function(x,r){return ww(r,p)}))},
+rc=RS.map(function(x,r){return{n:x[0],s:x[1],a:x[3],c:sum(ps.map(function(p){return dn(p)*ww(r,p)/ws(p)})),u:sin(r*2.1)<0}}).sort(function(a,b){return b.c-a.c});
+return{t:"Healthcare ops · denial analysis",k:[{l:"Claims processed",v:k(sum(ps.map(function(p){return CL[p]}))*ms.length),d:"selected period"},{l:"Denial rate (latest)",v:last+"%",d:(chg<=0?"▼ ":"▲ ")+Math.abs(chg)+"% vs start",g:chg<=0},{l:"Denied claims",v:k(tot),d:"selected period"},{l:"Clean-claim rate",v:(100-last).toFixed(1)+"%",d:"target ≥ 90%",g:100-last>=90}],
+v:[{t:"Denial rate (%) vs 10% target",s:2,h:area(s,10,ms.map(function(m){return M[m]}))},{t:"Target attainment",h:gauge(Math.round(10/last*100),"10% target ÷ current rate")},{t:"Pareto · denials by reason",s:2,h:pareto(rc.map(function(r){return Math.round(r.c)}),rc.map(function(r){return r.s}))},{t:"Denials by payer",h:donut(ps.map(dn),ps.map(function(p){return PA[p]}))},
+{t:"Error patterns and preventive controls",s:3,h:tb(["Reason","Denials","Share","Trend","Preventive control"],rc.map(function(r){return[r.n,k(r.c),db(r.c/tot*100,Math.round(r.c/tot*100)+"%"),'<span class="'+(r.u?"up":"dn")+'">'+(r.u?"▲ watch":"▼ improving")+'</span>',r.a]}))}]}};
+D.basic=function(f){var rs=f.Region=="All"?[0,1,2,3]:[RG.indexOf(f.Region)],ms=hm(f.Half),
+a=ms.map(function(m){return sum(rs.map(function(r){return act(r,m)}))}),t=ms.map(function(m){return sum(rs.map(function(r){return tg(r,m)}))}),
+sa=sum(a),st=sum(t),att=Math.round(sa/st*100),bi=a.indexOf(Math.max.apply(0,a)),gr=Math.round((a[a.length-1]/a[0]-1)*100);
+return{t:"Sales performance · actual vs target",k:[{l:"Total actual (₹ lakh)",v:k(sa),d:"selected period"},{l:"Target attainment",v:att+"%",d:att>=100?"▲ above target":"▼ below target",g:att>=100},{l:"Best month",v:M[ms[bi]],d:a[bi]+" lakh"},{l:"Growth, first to last",v:(gr>=0?"+":"")+gr+"%",d:"month on month trend",g:gr>=0}],
+v:[{t:"Actual vs target by month",s:2,h:cols(a,t,ms.map(function(m){return M[m]}))},{t:"Target attainment",h:gauge(att,"actual ÷ target")},{t:"Actual by region (₹ lakh)",h:hbar(rs.map(function(r){return sum(ms.map(function(m){return act(r,m)}))}),rs.map(function(r){return RG[r]}))},
+{t:"Region summary",s:2,h:tb(["Region","Actual","Target","Variance"],rs.map(function(r){var x=sum(ms.map(function(m){return act(r,m)})),y=sum(ms.map(function(m){return tg(r,m)})),q=Math.round((x/y-1)*100);return[RG[r],x,y,'<span class="'+(q>=0?"dn":"up")+'">'+(q>=0?"▲ +":"▼ ")+q+"%</span>"]}))}]}};
+var SL={auto:[{n:"Customer",o:["All"].concat(CU)},{n:"Half",o:["Full year","H1","H2"]}],health:[{n:"Payer",o:["All"].concat(PA)},{n:"Half",o:["Full year","H1","H2"]}],basic:[{n:"Region",o:["All"].concat(RG)},{n:"Half",o:["Full year","H1","H2"]}]};
+var cur="auto",F={};
+function render(){var d=D[cur](F);$("pt").textContent=d.t;
+$("sl").innerHTML=SL[cur].map(function(s){return '<h4>'+s.n+'</h4>'+s.o.map(function(o){return '<button class="sc" aria-pressed="'+(F[s.n]==o)+'" data-s="'+s.n+'" data-o="'+o+'">'+o+'</button>'}).join("")}).join("");
+$("cv").innerHTML='<div class="kr">'+d.k.map(function(q){return '<div class="kp"><small>'+q.l+'</small><b>'+q.v+'</b><i class="'+(q.g===true?"g":q.g===false?"b":"")+'">'+q.d+'</i></div>'}).join("")+'</div><div class="vg">'+d.v.map(function(v){return '<div class="vz s'+(v.s||1)+'"><h3>'+v.t+'</h3>'+v.h+'</div>'}).join("")+'</div>'}
+function go(p){cur=p;F={};SL[p].forEach(function(s){F[s.n]=s.o[0]});document.querySelectorAll(".pg").forEach(function(b){b.setAttribute("aria-selected",b.dataset.p==p)});render()}
+$("sl").onclick=function(e){var b=e.target.closest(".sc");if(b){F[b.dataset.s]=b.dataset.o;render()}};
+document.querySelectorAll(".pg").forEach(function(b){b.onclick=function(){go(b.dataset.p)}});
+go("auto");
+</script>
+</body>
+</html>
